@@ -1,0 +1,45 @@
+.contact{
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        align-items: center;
+
+        .image{
+            flex: 1 1 35rem;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        form{
+            flex: 1 1 50rem;
+            padding: 2rem;
+            box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.2);
+            border-radius: .5rem;
+
+            .inputBox{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            input:not([type="submit"]), textarea{
+                width: 49%;
+                margin: 1rem 0;
+                padding: 1rem;
+                color: #333;
+                background-color: #eeeeee;
+                text-transform: none;
+                font-size: 1.4rem;
+            }
+
+            textarea{
+                height: 15rem;
+                resize: none;
+                width: 100%;
+            }
+        }
+    }
+}

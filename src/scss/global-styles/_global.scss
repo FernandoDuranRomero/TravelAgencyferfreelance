@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+$orange: orange;
+$selection_color: snow;
+$background_header: #333;
+$logo_color: snow;
+$links_color: snow;
+$icons_header_color: snow;
+$label_search_color: snow;
+$background_color_login_form: rgba($color: black, $alpha: 0.7);
+$login_form_form: snow;
+$h3_form_color: #444;
+$input_form_color: #333;
+$button_letter_color: snow;
+$form_p: #666;
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+*::selection{
+    background-color: $orange;
+    color: $selection_color;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+  }
+
+  section{
+    padding: 1.5rem 9%;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: $orange;
+    color: $button_letter_color;
+    padding: 1rem 3rem;
+    border: .2rem solid $orange;
+    cursor: pointer;
+    font-size: 1.7rem;
+
+    &:hover{
+      background-color: rgba(255, 165, 0, 0.2);
+      color: $orange;
+    }
+
+  }
+
+  .heading{
+    text-align: center;
+    padding: 2.5rem 0;
+
+    span{
+      font-size: 3.5rem;
+      background-color: rgba(255, 165, 0, 0.5);
+      color: $orange;
+      border-radius: .5rem;
+      padding: .2rem 1rem;
+    }
+
+    .space{
+     background: none;   
+    }
+  }
+
+  .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+  

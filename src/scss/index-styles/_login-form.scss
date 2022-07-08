@@ -1,0 +1,83 @@
+.login-form-container{
+    position: fixed;
+    top: -120%;
+    left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width: 100%;
+    background-color: $background_color_login_form;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    form{
+        margin: 2rem;
+        padding: 1.5rem 2rem;
+        border-radius: .5rem;
+        background-color: $login_form_form;
+        width: 50rem;
+
+        h3{
+            font-size: 3rem;
+            color: $h3_form_color;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        label{
+            font-size: 1.5rem;
+        }
+
+        .btn{
+            display: block;
+            width: 100%
+        }
+
+        p{
+            padding: .5rem 0;
+            font-size: 1.5rem;
+            color: $form_p;
+
+            a{
+                color: $orange;
+                
+                &:hover{
+                    color: #333;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .box{
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.7rem;
+        color: $input_form_color;
+        margin: .6rem 0;
+        border: .1rem solid rgba($color: black, $alpha: 0.3);
+        text-transform: none;
+    
+        &:focus{
+            border-color: $orange;
+        }
+    }
+}
+
+.active-two{
+    top: 0;
+}
+
+#remember{
+  margin: 2rem 0;
+}
+
+#form-close{
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    font-size: 5rem;
+    color: snow;
+    cursor: pointer;
+}

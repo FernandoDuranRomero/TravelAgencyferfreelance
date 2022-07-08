@@ -1,0 +1,46 @@
+.footer{
+    background-color: #333;
+
+    .box{
+        padding: 1rem 0;
+        flex: 1 1 25rem;
+
+        h3{
+            font-size: 2.5rem;
+            padding: .7rem 0;
+            color: #fff;
+        }
+
+        p{
+            font-size: 1.5rem;
+            padding: .7rem;
+            color: #eee;
+        }
+
+        a{
+            display: block;
+            font-size: 1.5rem;
+            padding: .7rem;
+            color: #eee;
+
+            &:hover{
+                color: $orange;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .credit{
+        text-align: center;
+        padding: 2rem 1rem;
+        margin-top: 1rem;
+        font-size: 2rem;
+        font-weight: normal;
+        color: #fff;
+        border-top: .1rem solid rgba(255, 255, 255, 0.2);
+
+        span{
+            color: $orange;
+        }
+    }
+}
